@@ -3,9 +3,12 @@ class BooksController < ApplicationController
   end
 
   def new
+    @book = Book.new
   end
 
   def create
+    book = Book.new(book_params)
+    book.save
   end
 
   def edit

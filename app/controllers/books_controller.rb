@@ -10,6 +10,7 @@ class BooksController < ApplicationController
   def create
     book = Book.new(book_params)
     book.save
+    redirect_to booker_path(book.id)
   end
 
   def edit

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :books
   root 'homes#top'
+  resources :books
+  delete 'book/:id' => 'books#destroy', as:'destroy-abook'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

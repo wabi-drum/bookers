@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
+
 <head>
 </head>
+
 <body>
+
 <h1>Books</h1>
+
 <table>
   <thead>
     <tr>
@@ -24,7 +28,7 @@
     <% end %>
   </tbody>
 </table>
-</body>
+
 <h3>New book</h3>
 <%= form_with model: @book do |f| %>
   <h4>Title</h4>
@@ -35,3 +39,5 @@
 
   <%= f.submit 'Create Book' %>
 <% end %>
+
+</body>
